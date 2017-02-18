@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyPlugin</class>
+ <widget class="QWidget" name="MyPlugin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Visual servo</string>
+  </property>
+
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+<item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+       <item>
+        <widget class="QLabel" name="select direction and PWM">
+         <property name="toolTip">
+          <string>robot</string>
+         </property>
+         <property name="text">
+          <string>   					           Select Direction of motion and PWM</string>
+         </property>
+        </widget>
+       </item>
+	</layout>
+	</item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,0,0,0">
+
+      <item>
+        <widget class="QPushButton" name="up_linear_push_button"> 
+         <property name="toolTip">
+          <string>forward</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+
+    <item>
+        <widget class="QPushButton" name="back_linear_push_button">
+         <property name="toolTip">
+          <string>backward</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+       <item>
+        <widget class="QPushButton" name="left_linear_push_button"> 
+         <property name="toolTip">
+          <string>left</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+        <widget class="QPushButton" name="right_linear_push_button">
+         <property name="toolTip">
+          <string>right</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+	<layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,0,0,0,0">
+	<item>
+        <widget class="QDoubleSpinBox" name="max_x_linear_double_spin_box">
+         <property name="toolTip">
+          <string>controlling linear  velocity</string>
+         </property>
+         <property name="maximum">
+          <double>255.000000000000000</double>
+         </property>
+	<property name = "minimum">
+	<double>0.000000000000000</double>
+	</property>
+         <property name="singleStep">
+          <double>5.00000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+	</item>
+	</layout>
+	</item>       
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout> 
+   </item>
+<!--    -->
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>40</number>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+	</layout>
+	</item>
+<item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+       <item>
+        <widget class="QLabel" name="select servo and screwing control">
+         <property name="toolTip">
+          <string>robot</string>
+         </property>
+         <property name="text">
+          <string>   					           Select servo and screwing control</string>
+         </property>
+        </widget>
+       </item>
+	</layout>
+	</item>
+        <item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+       <item>
+        <widget class="QPushButton" name="servo_up_push_button">
+         <property name="toolTip">
+          <string>servo control</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+	<item>
+        <widget class="QPushButton" name="screw_in_push_button">
+         <property name="toolTip">
+          <string>screw in</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    <item>
+        <widget class="QPushButton" name="screw_out_push_button">
+         <property name="toolTip">
+          <string>screw out</string>
+         </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+   </layout>
+   </item>
+<!--  -->
+<item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+	</layout>
+	</item>
+        <item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+       <item>
+        <widget class="QLabel" name="select robot number">
+         <property name="toolTip">
+          <string>robot</string>
+         </property>
+         <property name="text">
+          <string>   					            Select robot number</string>
+         </property>
+        </widget>
+       </item>
+	</layout>
+	</item>
+<!--   -->
+<item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+	</layout>
+	</item>
+        <item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+<item>
+      <widget class="QCheckBox" name="indiv_check_box">
+       <property name="toolTip">
+        <string>Mark Selected</string>
+       </property>
+       <property name="text">
+        <string>	Command individual robots</string>
+       </property>
+      </widget>
+     </item>
+      <item>
+      <widget class="QCheckBox" name="combo_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>Command all robots together</string>
+       </property>
+      </widget>
+     </item>
+	</layout>
+	</item>
+<item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+	</layout>
+	</item>
+        <item>
+ <layout class="QHBoxLayout" name="HorizontalLayout_5" stretch="0,0,0,0,0">
+<item>
+      <widget class="QCheckBox" name="robot1_check_box">
+       <property name="toolTip">
+        <string>Mark Selected</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 1</string>
+       </property>
+      </widget>
+     </item>
+      <item>
+      <widget class="QCheckBox" name="robot2_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 2</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot3_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 3</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot4_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 4</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot5_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 5</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot6_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 6</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot7_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 7</string>
+       </property>
+      </widget>
+     </item>
+<item>
+      <widget class="QCheckBox" name="robot8_check_box">
+       <property name="toolTip">
+        <string>Mark</string>
+       </property>
+       <property name="text">
+        <string>ROBOT 8</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    </item>
+<!--   -->
+   <item>
+    <widget class="MyGraphicsView" name="graphics_view">
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="status_bar_layout">
+     <item>
+      <widget class="QProgressBar" name="progress_bar">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="stamp_label">
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Time Stamp of the current playhead</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="date_label">
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Date and time of the playhead</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="seconds_label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Number of Seconds from the beginning of the current playhead</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="playspeed_label">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>rqt_mypkg.my_widget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
