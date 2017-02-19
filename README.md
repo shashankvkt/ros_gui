@@ -14,5 +14,4 @@ The following are the steps in order to install and execute this package
  4.compile your paackage by typing the following command in your catkin_ws directory.
 
     catkin_make
-
 5. Open a new terminal and type
