@@ -15,4 +15,6 @@ The following are the steps in order to install and execute this package
 
     catkin_make  
     
-A. Open a new terminal and type
+5.Open a new terminal and type
+
+    roscore
