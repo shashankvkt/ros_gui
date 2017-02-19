@@ -8,6 +8,9 @@ The following are the steps in order to install and execute this package
 
 2.Create a catkin workspace  
 
+
 3. In the src folder type the following command  
     git clone https://github.com/shashankvkt/ros_gui.git  
+    
+    
 4.
