@@ -5,10 +5,7 @@ http://robotics.iiit.ac.in/people/harsha.turlapati/DCMR/icra17.html
     
 The following are the steps in order to install and execute this package  
 1. Install ROS-indigo   
-
 2.Create a catkin workspace  
-
-
 3. In the src folder type the following command  
     git clone https://github.com/shashankvkt/ros_gui.git  
     
