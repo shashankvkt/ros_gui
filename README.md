@@ -28,6 +28,6 @@ The following are the steps in order to install and execute this package
 
 Since the project involves a multi agent robot system, it becomes essential to be able to control the robots individually as well as control all of them at once.  
 It majorly involves the use of 2 checkboxes, namely  
-a.command all  robots
+a.command all  robots  
 b.command indiv robots
 
