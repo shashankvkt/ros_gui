@@ -15,8 +15,6 @@ The following are the steps in order to install and execute this package
 
     catkin_make
 5. Open a new terminal and type 
-
     roscore
-6. Open another terminal and type the following command  
-
+6. Open another terminal and type the following command 
     rqt --standalone rqt_mypkg
