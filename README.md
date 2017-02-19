@@ -22,4 +22,4 @@ The following are the steps in order to install and execute this package
 6.Open another terminal and type the following command
 
     rqt --standalone rqt_mypkg
-7. The following picture appears on the screen showing the GUI
+7.The following picture appears on the screen showing the GUI
