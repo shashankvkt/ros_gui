@@ -24,5 +24,10 @@ The following are the steps in order to install and execute this package
     rqt --standalone rqt_mypkg
 7.The following picture appears on the screen showing the GUI  
 
-![screenshot from 2017-02-19 13 20 03](https://cloud.githubusercontent.com/assets/23419376/23100485/1c63bb9c-f6a8-11e6-9446-1bb907244dfe.png)
+![screenshot from 2017-02-19 13 20 03](https://cloud.githubusercontent.com/assets/23419376/23100485/1c63bb9c-f6a8-11e6-9446-1bb907244dfe.png)  
+
+Since the project involves a multi agent robot system, it becomes essential to be able to control the robots individually as well as control all of them at once.  
+It majorly involves the use of 2 checkboxes, namely  
+a.command all  robots
+b.command indiv robots
 
