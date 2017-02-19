@@ -15,4 +15,4 @@ The following are the steps in order to install and execute this package
 
     catkin_make  
     
-5. Open a new terminal and type
+A. Open a new terminal and type
