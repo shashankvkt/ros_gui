@@ -244,7 +244,7 @@ class MyWidget(QWidget):
 
 
     def value_cb(self,event=None):
-        #print self.max_x_linear_double_spin_box.value()
+        #returns pwm value
         rospy.set_param('/parameter/motor/pwm_val',self.max_x_linear_double_spin_box.value())
     
 
