@@ -42,5 +42,15 @@ b.command indiv robots
 
 11.When a particular check box is selected or when a particular command is given from the GUI (say forward), the corresponding command is given in the form of a ROS parameter. The value of the ROS parameter determines TRUE/FALSE value of that particular motion which can be changed in the "my_widget.py" file.  
 
-12.
+12.For the robot to execute a command selected from the GUI, follow the following steps:  
 
+a.When you start roscore on the server side, Copy the following command in your client (Rpi) directory:
+
+    ROS_MASTER_URI=http://< >
+b.Copy the following file into your client (Rpi) directory:
+
+    motor_move.py
+c.To execute the code, execute the following command:
+
+    python motor_move.py
+d.Now press the different icons on the GUI, to see it's respective motion being executed by the robot.
