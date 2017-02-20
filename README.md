@@ -1,5 +1,5 @@
 # ros_gui
-This repository is a ROS based Graphic User Interface to control a multi-agent robotic system. The project has been developed with reference to the idea of Detachable Modular Robot capable of Cooperative Climbing and Multi Agent Exploration which can be refered fron the following link  
+This repository is a ROS based Graphic User Interface to control a multi-agent robotic system. The project has been developed with reference to the idea of Detachable Modular Robot capable of Cooperative Climbing and Multi Agent Exploration which can be refered from the following link  
 
    http://robotics.iiit.ac.in/people/harsha.turlapati/DCMR/icra17.html  
    
@@ -38,5 +38,9 @@ b.command indiv robots
 
 10.Individual robots can be controlled by selecting the "command individual robots" checkbo and then selecting the robot number on which the directional commands are expected to execute. The following is an example of using the checkbox.  
 
-![screenshot from 2017-02-19 13_46_39](https://cloud.githubusercontent.com/assets/23419376/23101244/00364e32-f6b5-11e6-98fd-e8c7ac85339b.png)
+![screenshot from 2017-02-19 13_46_39](https://cloud.githubusercontent.com/assets/23419376/23101244/00364e32-f6b5-11e6-98fd-e8c7ac85339b.png)  
+
+11.When a particular check box is selected or when a particular command is given from the GUI (say forward), the corresponding command is given in the form of a ROS parameter. The value of the ROS parameter determines TRUE/FALSE value of that particular motion which can be changed in the "my_widget.py" file.  
+
+12.
 
