@@ -53,4 +53,4 @@ b.Copy the following file into your client (Rpi) directory:
 c.To execute the code, execute the following command:
 
     python motor_move.py
-d.Now press the different icons on the GUI, to see it's respective motion being executed by the robot.
+d.Now control different icons on the GUI, to see it's respective motion being executed by the robot.
