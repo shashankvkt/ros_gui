@@ -54,3 +54,5 @@ c.To execute the code, execute the following command:
 
     python motor_move.py
 d.Now control different icons on the GUI, to see it's respective motion being executed by the robot.
+
+13.DISCLAIMER: The above code contains QtWidget library which works smooothly with ROS-indigo. However for higher ROS versions Widget class is defined in QtWidgets rather then QtGui, so changes have to be made accordingly.
