@@ -14,7 +14,7 @@
       -->
       <label>Bag</label>
       <icon type="theme">system-help</icon>
-      <statustip>Great user interface to provide real value.</statustip>
+      <statustip>Graphic user interface.</statustip>
     </qtgui>
   </class>
 </library>
